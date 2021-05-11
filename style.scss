@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$paragraphs: hsla(0, 0%, 100%, 0.75);
+$general-color: hsl(0, 0%, 95%);
+
+$first-card-color: hsl(31, 77%, 52%);
+$second-card-color: hsl(184, 100%, 22%);
+$third-card-color: hsl(179, 100%, 13%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  // height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+#card {
+  display: flex;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto 3rem;
+}
+
+.sub-card {
+  text-align: left;
+  padding: 2rem 3rem;
+
+  .icon {
+    padding: 1rem 0;
+  }
+
+  .sub-card-heading {
+    color: $general-color;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    padding: 1rem 0;
+  }
+
+  .sub-card-text {
+    color: $paragraphs;
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding: .75rem 0;
+    margin-right: .55rem;
+    letter-spacing: .5px;
+    height: 150px;
+    overflow: hidden
+  }
+
+  .btn {
+    border: none;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+    padding: .95rem 2rem;
+    border-radius: 40px;
+    font-size: 16px;
+
+    &.sedan {
+      border: 3px solid $first-card-color;
+      color: $first-card-color;
+
+      &:hover {
+        background-color: $first-card-color;
+        border: 3px solid $general-color;
+        color: $general-color;
+      }
+    }
+
+    &.suv {
+      border: 3px solid $second-card-color;
+      color: $second-card-color;
+
+      &:hover {
+        background-color: $second-card-color;
+        border: 3px solid $general-color;
+        color: $general-color;
+      }
+    }
+
+    &.luxury {
+      border: 3px solid $third-card-color;
+      color: $third-card-color;
+
+      &:hover {
+        background-color: $third-card-color;
+        border: 3px solid $general-color;
+        color: $general-color;
+      }
+    }
+  }
+
+  &.first { background-color: $first-card-color; }
+  &.second { background-color: $second-card-color; }
+  &.third { background-color: $third-card-color; }
+}
+
+@media screen and (max-width: 900px) {
+  #card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto 3rem;
+  }
+
+  .sub-card {
+    text-align: left;
+    padding: 2rem 3rem;
+
+    .icon {
+      padding: 1rem 0;
+    }
+
+    .sub-card-heading {
+      color: $general-color;
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 40px;
+      padding: 1rem 0;
+    }
+
+    .sub-card-text {
+      color: $paragraphs;
+      font-size: 15px;
+      line-height: 1.5rem;
+      padding: .75rem 0;
+      margin-right: .55rem;
+      letter-spacing: .5px;
+      height: 150px;
+    }
+
+    .btn {
+      border: none;
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      padding: .95rem 2rem;
+      border-radius: 40px;
+      font-size: 16px;
+    }
+
+    &.first {
+      margin-top: 4rem;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &.third {
+      margin-bottom: 4rem;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #card {
+    overflow: hidden;
+    margin: auto 1rem;
+  }
+
+  .sub-card {
+    padding: 2rem 3rem;
+
+    .sub-card-text {
+      padding: .5rem 0;
+      max-height: 250px;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: .95rem 2rem;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+
+  .sub-card {
+    .sub-card-text {
+      padding: .5rem 0;
+      height: 160px;
+      font-size: 14px;
+      line-height: 1.2rem;
+    }
+
+    .btn {
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      padding: .75rem 1rem;
+      font-size: 15px;
+    }
+  }
+}
+
+// font-family: 'Lexend Deca', sans-serif;
+// font-family: 'Big Shoulders Display', cursive;

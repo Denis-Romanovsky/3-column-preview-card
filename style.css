@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+#card {
+  display: flex;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto 3rem;
+}
+
+.sub-card {
+  text-align: left;
+  padding: 2rem 3rem;
+}
+.sub-card .icon {
+  padding: 1rem 0;
+}
+.sub-card .sub-card-heading {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  padding: 1rem 0;
+}
+.sub-card .sub-card-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.5rem;
+  padding: 0.75rem 0;
+  margin-right: 0.55rem;
+  letter-spacing: 0.5px;
+  height: 150px;
+  overflow: hidden;
+}
+.sub-card .btn {
+  border: none;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  padding: 0.95rem 2rem;
+  border-radius: 40px;
+  font-size: 16px;
+}
+.sub-card .btn.sedan {
+  border: 3px solid #e38826;
+  color: #e38826;
+}
+.sub-card .btn.sedan:hover {
+  background-color: #e38826;
+  border: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+.sub-card .btn.suv {
+  border: 3px solid #006970;
+  color: #006970;
+}
+.sub-card .btn.suv:hover {
+  background-color: #006970;
+  border: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+.sub-card .btn.luxury {
+  border: 3px solid #004241;
+  color: #004241;
+}
+.sub-card .btn.luxury:hover {
+  background-color: #004241;
+  border: 3px solid #f2f2f2;
+  color: #f2f2f2;
+}
+.sub-card.first {
+  background-color: #e38826;
+}
+.sub-card.second {
+  background-color: #006970;
+}
+.sub-card.third {
+  background-color: #004241;
+}
+
+@media screen and (max-width: 900px) {
+  #card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto 3rem;
+  }
+
+  .sub-card {
+    text-align: left;
+    padding: 2rem 3rem;
+  }
+  .sub-card .icon {
+    padding: 1rem 0;
+  }
+  .sub-card .sub-card-heading {
+    color: #f2f2f2;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 40px;
+    padding: 1rem 0;
+  }
+  .sub-card .sub-card-text {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding: 0.75rem 0;
+    margin-right: 0.55rem;
+    letter-spacing: 0.5px;
+    height: 150px;
+  }
+  .sub-card .btn {
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.95rem 2rem;
+    border-radius: 40px;
+    font-size: 16px;
+  }
+  .sub-card.first {
+    margin-top: 4rem;
+    border-radius: 10px 10px 0 0;
+  }
+  .sub-card.third {
+    margin-bottom: 4rem;
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #card {
+    overflow: hidden;
+    margin: auto 1rem;
+  }
+
+  .sub-card {
+    padding: 2rem 3rem;
+  }
+  .sub-card .sub-card-text {
+    padding: 0.5rem 0;
+    max-height: 250px;
+  }
+  .sub-card .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.95rem 2rem;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .sub-card .sub-card-text {
+    padding: 0.5rem 0;
+    height: 160px;
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+  .sub-card .btn {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
